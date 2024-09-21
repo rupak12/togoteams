@@ -1,0 +1,38 @@
+.aboutHero {
+  background: url("../images/Group_50.svg") no-repeat scroll center;
+  background-size: cover;
+}
+
+.blogText {
+  overflow: hidden;
+  max-height: 10rem;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.blogText2 {
+  overflow: hidden;
+  max-height: 4rem;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.services {
+  overflow: hidden;
+  max-height: 4rem;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.slider {
+  scrollbar-width: none;
+}

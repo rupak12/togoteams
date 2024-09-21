@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+
+    <title>About Page</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-white shadow-md max-w-screen-xl mt-2 m-auto rounded-2xl sm:px-4 md:px-10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20">
+            <div class="flex justify-between items-center w-full">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-2xl font-bold">
+                  <img
+                    src="/assets/images/logo.svg"
+                    decoding="async"
+                    loading="lazy"
+                    height="50"
+                    width="200"
+                    class="h-auto w-[10rem]"
+                  />
+                </a>
+              </div>
+
+              <!-- Primary Nav Items (Hidden on Mobile) -->
+              <div class="hidden md:-my-px sm:ml-6 md:flex sm:space-x-8">
+                <a
+                  href="#"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >Home</a
+                >
+                <a
+                  href="services.html"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >Services</a
+                >
+                <a
+                  href="about.html"
+                  class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+                >
+                  <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+                  About</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-[#283c90] text-white py-3 px-6 rounded-xl hidden md:inline-block"
+              >
+                Connect Now</a
+              >
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="-mr-2 flex items-center md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden sm:hidden py-4">
+          <div class="pt-2 pb-3 space-y-1">
+            <a
+              href="#"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+            >
+              <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+              About</a
+            >
+            <a
+              href="services.html"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+          </div>
+          <a
+            href="#"
+            class="bg-[#283c90] text-white py-3 px-6 rounded-xl block w-fit mt-6 m-auto"
+          >
+            Connect Now</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section
+      class="h-auto lg:h-[calc(100vh-92px)] w-full bg-[#eff7ff] py-10 lg:py-0"
+    >
+      <div class="max-w-screen-xl m-auto flex items-center px-4">
+        <div class="w-full lg:w-2/4 flex justify-center flex-col">
+          <a
+            href="#"
+            class="bg-[#f0f3ff] text-[#283c90] font-medium px-6 py-3 border w-fit"
+            >Togo Teams</a
+          >
+          <img
+            src="assets/images/text_animetion.svg"
+            alt="text"
+            class="h-[8rem] md:h-[12rem] w-fit"
+          />
+          <p class="text-md font-medium">
+            We are TOGO Teams, a group of enthusiastic and expert Software
+            developers. We provide services related to IT. We believe
+            "Digitalization in business will open enormous opportunities for
+            growth".
+          </p>
+        </div>
+        <div class="hidden lg:block w-2/4 aboutHero h-[calc(100vh-92px)]"></div>
+      </div>
+    </section>
+    <section
+      class="h-auto max-w-screen-xl m-auto grid grid-cols-2 md:grid-cols-4 gap-10 py-10 md:py-20"
+    >
+      <div class="flex flex-col text-center">
+        <img
+          src="assets/images/happy_customers.svg"
+          alt="happy_customers"
+          height="40"
+          width="50"
+          class="w-full h-[4rem] sm:h-[6rem] lg:h-[8rem] mb-3"
+        />
+        <p class="text-2xl font-semibold text-[#181818] mb-1">50+</p>
+        <p class="text-md font-medium">Happy Customers</p>
+      </div>
+      <div class="flex flex-col text-center">
+        <img
+          src="assets/images/projects.svg"
+          alt="happy_customers"
+          height="40"
+          width="50"
+          class="w-full h-[4rem] sm:h-[6rem] lg:h-[8rem] mb-3"
+        />
+        <p class="text-2xl font-semibold text-[#181818] mb-1">250+</p>
+        <p class="text-md font-medium">Projects Done</p>
+      </div>
+      <div class="flex flex-col text-center">
+        <img
+          src="assets/images/time.svg"
+          alt="happy_customers"
+          height="40"
+          width="50"
+          class="w-full h-[4rem] sm:h-[6rem] lg:h-[8rem] mb-3"
+        />
+        <p class="text-2xl font-semibold text-[#181818] mb-1">15+</p>
+        <p class="text-md font-medium">Year in Business</p>
+      </div>
+      <div class="flex flex-col text-center">
+        <img
+          src="assets/images/support.svg"
+          alt="happy_customers"
+          height="40"
+          width="50"
+          class="w-full h-[4rem] sm:h-[6rem] lg:h-[8rem] mb-3"
+        />
+        <p class="text-2xl font-semibold text-[#181818] mb-1">24/7</p>
+        <p class="text-md font-medium">Support Availabel</p>
+      </div>
+    </section>
+    <section
+      class="h-auto max-w-screen-xl m-auto flex flex-col gap-10 py-10 md:py-20 px-4"
+    >
+      <div class="flex items-center flex-wrap md:flex-nowrap gap-20">
+        <div class="w-full md:w-2/5 flex items-center justify-between">
+          <img
+            src="assets/images/Group_66.svg"
+            alt="group"
+            height="50"
+            width="50"
+            class="h-[9rem] sm:h-[12rem] lg:h-[15rem] w-[9rem] sm:w-[12rem] lg:w-[15rem]"
+          />
+          <p
+            class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90]"
+          >
+            Our mission
+          </p>
+        </div>
+        <div class="w-full md:w-3/5">
+          <p class="text-md">
+            Our mission is to help a business grow seamlessly with global
+            exposure by providing suitable platforms and aids. We want to be a
+            part of their journey by providing further assistance in digital
+            marketing, digitalisation of all process and procedures, ERP and
+            CRM.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap md:flex-nowrap gap-20">
+        <div class="w-full md:w-2/5 flex items-center justify-between">
+          <img
+            src="assets/images/Group.svg"
+            alt="group"
+            height="50"
+            width="50"
+            class="h-[7rem] sm:h-[9rem] lg:h-[12rem] w-[7rem] sm:w-[9rem] lg:w-[12rem]"
+          />
+          <p
+            class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90]"
+          >
+            Our Vision
+          </p>
+        </div>
+        <div class="w-full md:w-3/5">
+          <p class="text-md">
+            Our mission is to help a business grow seamlessly with global
+            exposure by providing suitable platforms and aids. We want to be a
+            part of their journey by providing further assistance in digital
+            marketing, digitalisation of all process and procedures, ERP and
+            CRM.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="h-auto max-w-screen-lg m-auto py-10 md:py-20 text-center px-4"
+    >
+      <h2
+        class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90] mb-4"
+      >
+        Our Event
+      </h2>
+      <p
+        class="whitespace-nowrap text-2xl md:text-3xl font-bold text-[#212121]"
+      >
+        Business Conference for
+      </p>
+      <p
+        class="whitespace-nowrap text-2xl md:text-3xl font-bold text-[#212121]"
+      >
+        Solving Problems
+      </p>
+
+      <div class="flex flex-col gap-10 mt-10">
+        <div class="flex justify-center flex-wrap gap-4">
+          <img
+            src="assets/images/event-1.svg"
+            alt=""
+            class="h-auto md:h-[20rem] w-full md:w-fit"
+          />
+          <div class="p-2 text-left">
+            <p class="mb-4 font-semibold text-[#283c90]">June 23, 2021</p>
+            <p class="text-xl font-semibold text-[#222] mb-8">
+              Mind-blowing Talks from Leading IT Minds
+            </p>
+            <div class="flex items-center justify-between">
+              <p class="flex items-center gap-4">
+                <img src="assets/images/clock.svg" alt="" class="h-5 w-5" />
+                10 Am to 03 Pm
+              </p>
+              <p class="flex items-center gap-4">
+                <img src="assets/images/hills.svg" alt="" class="h-5 w-5" />
+                Forest Hills
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center flex-wrap gap-4">
+          <img
+            src="assets/images/event-2.svg"
+            alt=""
+            class="h-auto md:h-[20rem] w-full md:w-fit"
+          />
+          <div class="p-2 text-left">
+            <p class="mb-4 font-semibold text-[#283c90]">June 23, 2021</p>
+            <p class="text-xl font-semibold text-[#222] mb-8">
+              Mind-blowing Talks from Leading IT Minds
+            </p>
+            <div class="flex items-center justify-between">
+              <p class="flex items-center gap-4">
+                <img src="assets/images/clock.svg" alt="" class="h-5 w-5" />
+                10 Am to 03 Pm
+              </p>
+              <p class="flex items-center gap-4">
+                <img src="assets/images/hills.svg" alt="" class="h-5 w-5" />
+                Forest Hills
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="h-auto max-w-screen-lg m-auto py-10 md:py-20 text-center px-4"
+    >
+      <h2
+        class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90] mb-4"
+      >
+        Happy Clients Says
+      </h2>
+      <p
+        class="whitespace-nowrap text-2xl md:text-3xl font-bold text-[#212121] capitalize"
+      >
+        Some Lovely feedback
+      </p>
+      <p
+        class="whitespace-nowrap text-2xl md:text-3xl font-bold text-[#212121] capitalize"
+      >
+        from our clients
+      </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full md:w-4/5 m-auto"
+      >
+        <div class="flex flex-col gap-6 text-left">
+          <div class="bg-[#f9f9f9] w-full p-7 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <p>
+                <span class="text-4xl font-bold text-[#212121]">4.9</span
+                ><span class="text-gray-500 text-xl font-semibold">/5</span>
+              </p>
+              <img src="assets/images/stars.svg" alt="" class="w-[8rem] h-20" />
+            </div>
+            <p class="text-2xl font-bold text-[#212121] mb-2">Very Good</p>
+            <p class="">41 reviews</p>
+          </div>
+          <div class="bg-[#f9f9f9] w-full p-7 rounded-2xl">
+            <img
+              src="assets/images/review1.svg"
+              alt=""
+              class="h-20 w-20 rounded-full"
+            />
+            <p class="my-6 text-gray-600 leading-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              possimus eos, qui maxime nisi ut. Doloribus fugiat repellat
+              mollitia nisi.
+            </p>
+            <p class="text-2xl font-bold text-[#212121] mb-2">
+              Oliver Charlotte
+            </p>
+            <p class="text-gray-600">Director</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 text-left">
+          <div class="bg-[#f9f9f9] w-full p-7 rounded-2xl">
+            <img
+              src="assets/images/review2.svg"
+              alt=""
+              class="h-20 w-20 rounded-full"
+            />
+            <p class="my-6 text-gray-600 leading-7">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Excepturi laborum ab, praesentium adipisci voluptatem facilis.
+            </p>
+            <p class="text-2xl font-bold text-[#212121] mb-2">
+              Amellia William
+            </p>
+            <p class="text-gray-600">Founder & CEO</p>
+          </div>
+          <div class="bg-[#f9f9f9] w-full p-7 rounded-2xl">
+            <img
+              src="assets/images/review3.svg"
+              alt=""
+              class="h-20 w-20 rounded-full"
+            />
+            <p class="my-6 text-gray-600 leading-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              possimus eos, qui maxime nisi ut. Doloribus fugiat repellat
+              mollitia nisi.
+            </p>
+            <p class="text-2xl font-bold text-[#212121] mb-2">
+              Amellia William
+            </p>
+            <p class="text-gray-600">Founder & CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-auto max-w-screen-lg m-auto pb-10 text-center">
+      <h2 class="whitespace-nowrap text-xl font-semibold text-[#2673f0] mb-4">
+        TEAM
+      </h2>
+      <p
+        class="whitespace-nowrap text-2xl md:text-3xl font-bold text-[#212121] capitalize mb-2"
+      >
+        Our Team Leaders
+      </p>
+      <p class="w-full md:w-2/3 m-auto text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in
+        consequatur deleniti ducimus alias ipsa .
+      </p>
+      <div
+        class="w-4/5 m-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-left"
+      >
+        <div class="border rounded-2xl">
+          <img
+            src="assets/images/team1.svg"
+            alt=""
+            class="h-auto md:h-[30rem] w-full rounded-2xl"
+          />
+          <div class="p-4 px-5">
+            <h2 class="text-2xl font-bold text-[#212121] capitalize mb-2">
+              Explore space
+            </h2>
+            <p class="text-gray-600">Main Developer</p>
+          </div>
+        </div>
+        <div class="border rounded-2xl">
+          <img
+            src="assets/images/team2.svg"
+            alt=""
+            class="h-auto md:h-[30rem] w-full rounded-2xl"
+          />
+          <div class="p-4 px-5">
+            <h2 class="text-2xl font-bold text-[#212121] capitalize mb-2">
+              Jony Paul
+            </h2>
+            <p class="text-gray-600">Main Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-auto max-w-screen-xl m-auto pb-10 px-4">
+      <p class="text-gray-600 mb-2">Togo Teams Enviornment</p>
+      <h2 class="whitespace-nowrap text-3xl font-semibold text-[#283c90] mb-1">
+        Blogs
+      </h2>
+      <div class="m-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 text-left">
+        <div class="p-3 shadow-md rounded-2xl flex gap-4">
+          <img
+            src="assets/images/blog1.svg"
+            alt=""
+            class="h-40 md:h-60 w-fit"
+          />
+          <div class="flex flex-col justify-between">
+            <div>
+              <h2 class="text-2xl text-[#283c90] font-semibold">Title</h2>
+              <p class="blogText mb-6 text-sm sm:text-xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore ab dicta veniam asperiores animi incidunt, aperiam iusto
+                libero officiis quisquam nulla .
+              </p>
+            </div>
+            <a
+              href="#"
+              class="bg-[#283c90] text-white px-6 py-3 w-fit rounded-2xl"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="hidden md:flex flex-col gap-4">
+          <div class="flex items-center gap-6 flex-nowrap">
+            <div class="w-3/5 p-1 shadow-md rounded-2xl flex gap-4">
+              <img
+                src="assets/images/blog2.svg"
+                alt=""
+                class="w-fit h-[8rem]"
+              />
+              <div>
+                <p class="text-2xl text-[#283c90] font-semibold">Title</p>
+                <p class="blogText2 text-md mb-6">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore ab dicta veniam asperiores animi incidunt, aperiam
+                  iusto libero officiis quisquam nulla .
+                </p>
+              </div>
+            </div>
+            <div class="w-2/5 p-1 shadow-md rounded-2xl">
+              <img
+                src="assets/images/blog3.svg"
+                alt=""
+                class="w-full h-[8rem]"
+              />
+            </div>
+          </div>
+          <div class="p-1 shadow-md rounded-2xl flex gap-4">
+            <img src="assets/images/blog4.svg" alt="" class="h-40 w-fit" />
+            <div>
+              <p class="text-2xl text-[#283c90] font-semibold">Title</p>
+              <p class="blogText text-md mb-6">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore ab dicta veniam asperiores animi incidunt, aperiam iusto
+                libero officiis quisquam nulla .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-auto max-w-screen-lg m-4 md:m-auto py-10 px-4 md:px-10 border-4 border-[#283c90] mb-10 text-center"
+    >
+      <p class="mb-10 font-medium">
+        Our solutions drive growth through cost efficiency, security
+        enhancement, and procedural innovation. Let our expertise boost your
+        digital transformation efforts.
+      </p>
+      <a
+        href="#"
+        class="text-[#283c90] font-medium px-6 py-2 border-2 border-[#283c90]"
+        >Share Your Needs</a
+      >
+    </section>
+
+    <section class="h-auto w-screen py-14 bg-[#283c90] px-4 mt-4">
+      <div
+        class="max-w-screen-lg m-auto flex items-center justify-center gap-6 md:justify-between flex-wrap"
+      >
+        <img
+          src="assets/images/connectText.svg"
+          alt=""
+          class="h-auto w-[15rem] md:w-[25rem]"
+        />
+        <a href="#" class="text-white border-2 border-white px-6 py-2"
+          >Connect now</a
+        >
+      </div>
+    </section>
+
+    <footer class="h-auto footer py-6 px-4 pb-10">
+      <a href="/" class="w-fit block m-auto">
+        <img
+          src="/assets/images/logo.svg"
+          decoding="async"
+          loading="lazy"
+          height="50"
+          width="200"
+          class="h-auto w-[10rem]"
+        />
+      </a>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 gap-y-10 lg:gap-y-0 max-w-screen-xl mt-10 m-auto"
+      >
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Product</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Landing Page</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Popup Builder</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Web design</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Content</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Integrations</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Use Cases</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Web-designers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Marketers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Small Business</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Website Builder</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Resources</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Academy </a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Blog</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Themes</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Hosting</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Developers</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Company</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="about.html" class="text-sm text-[#5d5d5d]">About Us</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Careers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">FAQs</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Teams</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Contact Us</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Contact Us</h2>
+          <div class="flex flex-col gap-4 mt-4">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/location.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+              <div>
+                <p class="text-sm font-medium">Wisconsin Ave, Suite 700</p>
+                <p class="text-sm font-medium">Chevy Chase, Maryland 20815</p>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <img
+                src="assets/images/email.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+
+              <p class="text-sm font-medium">support@figma.com</p>
+            </div>
+            <img
+              src="assets/images/map.svg"
+              height="100"
+              width="100"
+              alt="map image"
+              class="height-80 w-full"
+            />
+            <div class="flex items-center gap-5 mt-4">
+              <a href="#"
+                ><img
+                  src="assets/images/facebook.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/twitter.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/telegram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/instagram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/linkedin.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-screen-xl mt-10 m-auto flex items-center justify-between flex-wrap gap-10"
+      >
+        <p class="text-sm text-[#5d5d5d]">&copy;2024 All Rights Reserved</p>
+        <div class="flex items-center gap-x-6 gap-y-3 flex-wrap">
+          <a href="#" class="text-sm text-[#5d5d5d]">Privacy Policy</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Terms of Use</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Sales and Refunds</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Legal</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Site Map</a>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
