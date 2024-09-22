@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <title>Webdesign</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-white shadow-md max-w-screen-xl mt-2 m-auto rounded-2xl sm:px-4 md:px-10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20">
+            <div class="flex justify-between items-center w-full">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-2xl font-bold">
+                  <img
+                    src="assets/images/logo.svg"
+                    decoding="async"
+                    loading="lazy"
+                    height="50"
+                    width="200"
+                    class="h-auto w-[10rem]"
+                  />
+                </a>
+              </div>
+
+              <!-- Primary Nav Items (Hidden on Mobile) -->
+              <div class="hidden md:-my-px sm:ml-6 md:flex sm:space-x-8">
+                <a
+                  href="#"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+                  ><div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+                  Services</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  About</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-[#283c90] text-white py-3 px-6 rounded-xl hidden md:inline-block"
+              >
+                Connect Now</a
+              >
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="-mr-2 flex items-center md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden sm:hidden py-4">
+          <div class="pt-2 pb-3 space-y-1">
+            <a
+              href="#"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              About</a
+            >
+            <a
+              href="#"
+              class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+              ><div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+              Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+          </div>
+          <a
+            href="#"
+            class="bg-[#283c90] text-white py-3 px-6 rounded-xl block w-fit mt-6 m-auto"
+          >
+            Connect Now</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-auto w-full px-4 py-10 sm:py-14 relative">
+      <img
+        src="assets/images/web-development.svg"
+        alt="webdevelopment"
+        height="20"
+        width="100"
+        class="w-fit h-6 sm:h-7 sm:translate-x-20 block m-auto sm:m-0 mb-0 sm:mb-4"
+      />
+      <img
+        src="assets/images/webdesign.svg"
+        alt="website design image"
+        height="100"
+        width="200"
+        class="w-full h-80"
+      />
+    </section>
+    <section
+      class="h-auto w-full bg-[#f0f3ff] py-10 px-4 rounded-tl-2xl rounded-tr-2xl"
+    >
+      <div class="max-w-screen-lg m-auto">
+        <div
+          class="py-2 flex items-center gap-6 overflow-x-auto scroll-smooth duration-100 transition-all ease"
+        >
+          <button
+            onclick="showContainer('static')"
+            class="px-8 py-2 text-md rounded-lg font-medium tab-button whitespace-nowrap"
+          >
+            Static website
+          </button>
+          <button
+            onclick="showContainer('dynamic')"
+            class="px-8 py-2 text-md rounded-lg font-medium tab-button whitespace-nowrap"
+          >
+            Dynamic website
+          </button>
+          <button
+            onclick="showContainer('single')"
+            class="px-8 py-2 text-md rounded-lg font-medium tab-button whitespace-nowrap"
+          >
+            Single page development
+          </button>
+          <button
+            onclick="showContainer('cms')"
+            class="px-8 py-2 text-md rounded-lg font-medium tab-button whitespace-nowrap"
+          >
+            CMS website
+          </button>
+        </div>
+
+        <div class="containers mt-10">
+          <div id="static" class="content-container flex-col gap-6 sm:gap-10">
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p class="text-sm font-medium flex items-center gap-2">
+                  <img
+                    src="assets/images/subtitle.svg"
+                    alt="icon"
+                    height="10"
+                    width="10"
+                    class="h-6 w-6"
+                  />
+                  Overview
+                </p>
+              </div>
+              <div class="w-full sm:w-4/5">
+                <p class="text-sm font-medium">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis hic nobis tempore, natus cumque nulla. Tempora veniam
+                  provident, qui molestiae sint blanditiis iusto rerum! Id
+                  magnam accusamus, iste quod, totam, nihil nulla corrupti ipsam
+                  incidunt perferendis dolores doloribus iusto! Praesentium
+                  quaerat harum veniam odit voluptate ut asperiores aspernatur
+                  fugiat facere.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p class="text-sm font-medium flex items-center gap-2">
+                  <img
+                    src="assets/images/people.svg"
+                    alt="icon"
+                    height="10"
+                    width="10"
+                    class="h-6 w-6"
+                  />
+                  Common Usage
+                </p>
+              </div>
+              <div class="w-full sm:w-4/5">
+                <p class="text-sm font-medium">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis hic nobis tempore, natus cumque nulla. Tempora veniam
+                  provident, qui molestiae sint blanditiis iusto rerum! Id
+                  magnam accusamus, iste quod, totam, nihil nulla corrupti ipsam
+                  incidunt perferendis dolores doloribus iusto! Praesentium
+                  quaerat harum veniam odit voluptate ut asperiores aspernatur
+                  fugiat facere.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p class="text-sm font-medium flex items-center gap-2">
+                  <img
+                    src="assets/images/technologies.svg"
+                    alt="icon"
+                    height="10"
+                    width="10"
+                    class="h-6 w-6"
+                  />
+                  Technology used
+                </p>
+              </div>
+              <div
+                class="w-full sm:w-4/5 flex items-center gap-4 sm:gap-6 flex-wrap"
+              >
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  HTML
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  CSS
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Java Script
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Bootstrap
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Tailwind CSS
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  jQuery
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  React
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Github
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Amazon S3
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Glup
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Vercel
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  CMS
+                </button>
+                <button
+                  class="bg-[#5b7aff] text-white flex items-center gap-2 px-4 py-2 rounded-lg capitalize text-sm"
+                >
+                  <img
+                    src="assets/images/rightLineArrow.svg"
+                    alt="right line arrow"
+                    height="10"
+                    width="20"
+                    width="w-fit h-8"
+                  />
+                  Netlify
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p
+                  class="text-sm font-medium flex items-center gap-2 flex-nowrap whitespace-nowrap"
+                >
+                  <img
+                    src="assets/images/heart.svg"
+                    alt="icon"
+                    height="10"
+                    width="10"
+                    class="h-6 w-6"
+                  />
+                  Benefits of Static website
+                </p>
+              </div>
+              <div class="w-full sm:w-4/5">
+                <p class="text-sm font-medium">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis hic nobis tempore, natus cumque nulla. Tempora veniam
+                  provident, qui molestiae sint blanditiis iusto rerum! Id
+                  magnam accusamus, iste quod, totam, nihil nulla corrupti ipsam
+                  incidunt perferendis dolores doloribus iusto! Praesentium
+                  quaerat harum veniam odit voluptate ut asperiores aspernatur
+                  fugiat facere.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p class="text-sm font-medium flex items-center gap-2">
+                  <img
+                    src="assets/images/star.svg"
+                    alt="icon"
+                    height="10"
+                    width="10"
+                    class="h-6 w-6"
+                  />
+                  Why Togo Teams?
+                </p>
+              </div>
+              <div class="w-full sm:w-4/5">
+                <p class="text-sm font-medium">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis hic nobis tempore, natus cumque nulla. Tempora veniam
+                  provident, qui molestiae sint blanditiis iusto rerum! Id
+                  magnam accusamus, iste quod, totam, nihil nulla corrupti ipsam
+                  incidunt perferendis dolores doloribus iusto! Praesentium
+                  quaerat harum veniam odit voluptate ut asperiores aspernatur
+                  fugiat facere.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
+              <div class="w-full sm:w-1/5">
+                <p
+                  class="text-sm font-medium whitespace-nowrap flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                    fill="#282828"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M479.56-255.39q17.13 0 28.94-11.82 11.81-11.83 11.81-28.97 0-17.13-11.83-28.94-11.83-11.8-28.96-11.8-17.13 0-28.94 11.83-11.81 11.83-11.81 28.96 0 17.13 11.83 28.94 11.83 11.8 28.96 11.8Zm-28.33-143.23h56.31q.77-29.53 8.65-47.19 7.89-17.65 38.27-46.8 26.39-26.39 40.42-48.74 14.04-22.34 14.04-52.77 0-51.65-37.11-80.69-37.12-29.03-87.81-29.03-50.08 0-82.88 26.73-32.81 26.73-46.81 62.96l51.38 20.61q7.31-19.92 25-38.81 17.69-18.88 52.54-18.88 35.46 0 52.42 19.42 16.97 19.43 16.97 42.73 0 20.39-11.62 37.31-11.61 16.92-29.61 32.69-39.39 35.54-49.77 56.7-10.39 21.15-10.39 63.76ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                    />
+                  </svg>
+                  FAQ?
+                </p>
+              </div>
+              <div class="w-full sm:w-4/5">
+                <p
+                  class="text-sm font-medium flex items-center gap-2 px-6 py-2 bg-[#dddfe4] w-fit rounded-md mb-2"
+                >
+                  How do you develop static website?
+                  <img
+                    src="assets/images/northEastArrow.svg"
+                    alt="icon "
+                    height="10"
+                    width="10"
+                    class="h-3 w-3"
+                  />
+                </p>
+                <p
+                  class="text-sm font-medium flex items-center gap-2 px-6 py-2 bg-[#dddfe4] w-fit rounded-md mb-2"
+                >
+                  What responsibility you take for development of static
+                  website?
+                  <img
+                    src="assets/images/northEastArrow.svg"
+                    alt="icon "
+                    height="10"
+                    width="10"
+                    class="h-3 w-3"
+                  />
+                </p>
+                <p
+                  class="text-sm font-medium flex items-center gap-2 px-6 py-2 bg-[#dddfe4] w-fit rounded-md mb-2"
+                >
+                  Will you provide maintenance also after deployment?
+                  <img
+                    src="assets/images/northEastArrow.svg"
+                    alt="icon "
+                    height="10"
+                    width="10"
+                    class="h-3 w-3"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="dynamic" class="content-container">
+            This is the Dynamic Website content.
+          </div>
+          <div id="single" class="content-container">
+            This is the Single Page Development content.
+          </div>
+          <div id="cms" class="content-container">
+            This is the CMS Website content.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-screen-xl m-auto px-4 py-10 md:py-16">
+      <h2 class="text-[#283c90] text-2xl md:text-4xl font-semibold mb-3">
+        Explore more services
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6 mt-8"
+      >
+        <div class="flex flex-col shadow-md p-4 rounded-xl">
+          <img
+            src="assets/images/ui.svg"
+            alt=""
+            class="h-[8rem] md:h-[12rem] w-full"
+          />
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-[#222] mb-4">UI/UX design</h2>
+            <p class="text-sm services">
+              At our web development company, we understand that businesses
+              operate in a fast-paced environment and need their
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col shadow-md p-4 rounded-xl">
+          <img
+            src="assets/images/software.svg"
+            alt=""
+            class="h-[8rem] md:h-[12rem] w-full"
+          />
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-[#222] mb-4">
+              Software Development
+            </h2>
+            <p class="text-sm services">
+              Software development company, where we offer a comprehensive range
+              of app development services to clients across industries
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col shadow-md p-4 rounded-xl">
+          <img
+            src="assets/images/marketing.svg"
+            alt=""
+            class="h-[8rem] md:h-[12rem] w-full"
+          />
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-[#222] mb-4">
+              Digital Marketing
+            </h2>
+            <p class="text-sm services">
+              We offer a range of web development services to help businesses of
+              all sizes establish a strong online presence. Our team of
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-[25rem] w-full max-w-screen-xl m-auto webdevBanner flex justify-center flex-col items-center gap-10 px-4 mb-10"
+    >
+      <img
+        src="assets/images/creatingText.svg"
+        alt="creating Text"
+        class="w-fit height-40"
+      />
+      <a href="#" class="border-2 border-white text-white text-xl px-6 py-2"
+        >Connect now</a
+      >
+    </section>
+
+    <section class="mt-20 w-full h-auto px-4">
+      <div
+        class="h-auto max-w-screen-xl md:m-auto py-10 px-4 md:px-10 border-4 border-[#283c90] mb-10 text-center"
+      >
+        <p class="mb-10 font-medium">
+          Our solutions drive growth through cost efficiency, security
+          enhancement, and procedural innovation. Let our expertise boost your
+          digital transformation efforts.
+        </p>
+        <a
+          href="#"
+          class="text-[#283c90] font-medium px-6 py-2 border-2 border-[#283c90]"
+          >Share Your Needs</a
+        >
+      </div>
+    </section>
+
+    <section class="h-auto w-full py-14 bg-[#283c90] px-4 mt-4">
+      <div
+        class="max-w-screen-lg m-auto flex items-center justify-center gap-6 md:justify-between flex-wrap"
+      >
+        <img
+          src="assets/images/connectText.svg"
+          alt=""
+          class="h-auto w-[15rem] md:w-[25rem]"
+        />
+        <a href="#" class="text-white border-2 border-white px-6 py-2"
+          >Connect now</a
+        >
+      </div>
+    </section>
+
+    <footer class="h-auto footer py-6 px-4 pb-10">
+      <a href="/" class="w-fit block m-auto">
+        <img
+          src="assets/images/logo.svg"
+          decoding="async"
+          loading="lazy"
+          height="50"
+          width="200"
+          class="h-auto w-[10rem]"
+        />
+      </a>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 gap-y-10 lg:gap-y-0 max-w-screen-xl mt-10 m-auto"
+      >
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Product</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Landing Page</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Popup Builder</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Web design</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Content</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Integrations</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Use Cases</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Web-designers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Marketers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Small Business</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Website Builder</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Resources</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Academy </a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Blog</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Themes</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Hosting</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Developers</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Company</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">About Us</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Careers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">FAQs</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Teams</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Contact Us</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Contact Us</h2>
+          <div class="flex flex-col gap-4 mt-4">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/location.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+              <div>
+                <p class="text-sm font-medium">Wisconsin Ave, Suite 700</p>
+                <p class="text-sm font-medium">Chevy Chase, Maryland 20815</p>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <img
+                src="assets/images/email.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+
+              <p class="text-sm font-medium">support@figma.com</p>
+            </div>
+            <img
+              src="assets/images/map.svg"
+              height="100"
+              width="100"
+              alt="map image"
+              class="height-80 w-full"
+            />
+            <div class="flex items-center gap-5 mt-4">
+              <a href="#"
+                ><img
+                  src="assets/images/facebook.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/twitter.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/telegram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/instagram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/linkedin.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-screen-xl mt-10 m-auto flex items-center justify-between flex-wrap gap-10"
+      >
+        <p class="text-sm text-[#5d5d5d]">&copy;2024 All Rights Reserved</p>
+        <div class="flex items-center gap-x-6 gap-y-3 flex-wrap">
+          <a href="#" class="text-sm text-[#5d5d5d]">Privacy Policy</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Terms of Use</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Sales and Refunds</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Legal</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Site Map</a>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -8,3 +8,39 @@
   background: url("../images/footer.svg") no-repeat center scroll;
   background-size: cover;
 }
+
+.tab-button {
+  background-color: #b2b4b9;
+}
+
+.tab-button.activeBtn {
+  background-color: #5b7aff;
+  color: white;
+}
+
+.content-container {
+  display: none;
+}
+
+.content-container.flex {
+  display: flex;
+}
+
+.webdevBanner {
+  background: url("../images/webdevBg.svg") center no-repeat scroll;
+  background-size: cover;
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.transition-transform {
+  transition: transform 0.3s;
+}
+
+.payrollHero {
+  background: linear-gradient(281.91deg, #365dff, #0c122a);
+}
