@@ -36,3 +36,8 @@
 .slider {
   scrollbar-width: none;
 }
+
+.servicesBanner {
+  background: url("../images/handshake.svg") center no-repeat scroll;
+  background-size: cover;
+}

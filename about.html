@@ -16,121 +16,127 @@
     <title>About Page</title>
   </head>
   <body>
-    <header>
-      <nav
-        class="bg-white shadow-md max-w-screen-xl mt-2 m-auto rounded-2xl sm:px-4 md:px-10"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between h-20">
-            <div class="flex justify-between items-center w-full">
-              <!-- Logo -->
-              <div class="flex-shrink-0 flex items-center">
-                <a href="/" class="text-2xl font-bold">
-                  <img
-                    src="assets/images/logo.svg"
-                    decoding="async"
-                    loading="lazy"
-                    height="50"
-                    width="200"
-                    class="h-auto w-[10rem]"
-                  />
-                </a>
-              </div>
+    <!-- <header> -->
+    <nav
+      class="bg-white max-w-screen-xl mt-2 m-auto rounded-2xl sm:px-4 md:px-10 mb-4"
+      style="
+        box-shadow: 0px 1px 3px rgba(3, 7, 18, 0.02),
+          0px 5px 13px rgba(3, 7, 18, 0.03), 0px 12px 20px rgba(3, 7, 18, 0.05),
+          0px 20px 32px rgba(3, 7, 18, 0.06),
+          0px 32px 50px rgba(3, 7, 18, 0.041);
+      "
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex justify-between items-center w-full">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/images/logo.svg"
+                  decoding="async"
+                  loading="lazy"
+                  height="50"
+                  width="200"
+                  class="h-auto w-[10rem]"
+                />
+              </a>
+            </div>
 
-              <!-- Primary Nav Items (Hidden on Mobile) -->
-              <div class="hidden md:-my-px sm:ml-6 md:flex sm:space-x-8">
-                <a
-                  href="#"
-                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-                  >Home</a
-                >
-                <a
-                  href="services.html"
-                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-                  >Services</a
-                >
-                <a
-                  href="about.html"
-                  class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
-                >
-                  <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
-                  About</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-                  >Blog</a
-                >
-              </div>
+            <!-- Primary Nav Items (Hidden on Mobile) -->
+            <div class="hidden md:-my-px sm:ml-6 md:flex sm:space-x-8">
               <a
                 href="#"
-                class="bg-[#283c90] text-white py-3 px-6 rounded-xl hidden md:inline-block"
+                class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
               >
-                Connect Now</a
+              <a
+                href="services.html"
+                class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+              >
+                <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+                About</a
+              >
+              <a
+                href="#"
+                class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                >Blog</a
               >
             </div>
+            <a
+              href="#"
+              class="bg-[#283c90] text-white py-3 px-6 rounded-xl hidden md:inline-block"
+            >
+              Connect Now</a
+            >
+          </div>
 
-            <!-- Hamburger Menu for Mobile -->
-            <div class="-mr-2 flex items-center md:hidden">
-              <button
-                id="mobile-menu-button"
-                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+          <!-- Hamburger Menu for Mobile -->
+          <div class="-mr-2 flex items-center md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
               >
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
           </div>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden sm:hidden py-4">
-          <div class="pt-2 pb-3 space-y-1">
-            <a
-              href="#"
-              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
-              >Home</a
-            >
-            <a
-              href="about.html"
-              class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
-            >
-              <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
-              About</a
-            >
-            <a
-              href="services.html"
-              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
-              >Services</a
-            >
-            <a
-              href="#"
-              class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
-              >Contact</a
-            >
-          </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden sm:hidden py-4">
+        <div class="pt-2 pb-3 space-y-1">
           <a
             href="#"
-            class="bg-[#283c90] text-white py-3 px-6 rounded-xl block w-fit mt-6 m-auto"
+            class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
           >
-            Connect Now</a
+          <a
+            href="about.html"
+            class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+          >
+            <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+            About</a
+          >
+          <a
+            href="services.html"
+            class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Contact</a
           >
         </div>
-      </nav>
-    </header>
+        <a
+          href="#"
+          class="bg-[#283c90] text-white py-3 px-6 rounded-xl block w-fit mt-6 m-auto"
+        >
+          Connect Now</a
+        >
+      </div>
+    </nav>
+    <!-- </header> -->
     <section
       class="h-auto lg:h-[calc(100vh-92px)] w-full bg-[#eff7ff] py-10 lg:py-0"
     >
@@ -157,7 +163,7 @@
       </div>
     </section>
     <section
-      class="h-auto max-w-screen-xl m-auto grid grid-cols-2 md:grid-cols-4 gap-10 py-10 md:py-20"
+      class="h-auto max-w-screen-xl m-auto grid grid-cols-2 md:grid-cols-4 gap-10 py-10 md:py-28"
     >
       <div class="flex flex-col text-center">
         <img
@@ -205,10 +211,10 @@
       </div>
     </section>
     <section
-      class="h-auto max-w-screen-xl m-auto flex flex-col gap-10 py-10 md:py-20 px-4"
+      class="h-auto max-w-screen-xl m-auto flex flex-col gap-10 py-10 md:py-16 px-4"
     >
-      <div class="flex items-center flex-wrap md:flex-nowrap gap-20">
-        <div class="w-full md:w-2/5 flex items-center justify-between">
+      <div class="flex items-center flex-wrap md:flex-nowrap gap-5 md:gap-20">
+        <div class="w-full md:w-2/5 flex items-center">
           <img
             src="assets/images/Group_66.svg"
             alt="group"
@@ -232,14 +238,14 @@
           </p>
         </div>
       </div>
-      <div class="flex items-center flex-wrap md:flex-nowrap gap-20">
-        <div class="w-full md:w-2/5 flex items-center justify-between">
+      <div class="flex items-center flex-wrap md:flex-nowrap gap-5 md:gap-20">
+        <div class="w-full md:w-2/5 flex items-center">
           <img
             src="assets/images/Group.svg"
             alt="group"
             height="50"
             width="50"
-            class="h-[7rem] sm:h-[9rem] lg:h-[12rem] w-[7rem] sm:w-[9rem] lg:w-[12rem]"
+            class="h-[7rem] sm:h-[9rem] lg:h-[12rem] w-[7rem] sm:w-[9rem] lg:w-[12rem] mr-5"
           />
           <p
             class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90]"
@@ -258,9 +264,7 @@
         </div>
       </div>
     </section>
-    <section
-      class="h-auto max-w-screen-lg m-auto py-10 md:py-20 text-center px-4"
-    >
+    <section class="h-auto max-w-screen-lg m-auto py-10 text-center px-4">
       <h2
         class="whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#283c90] mb-4"
       >
@@ -277,12 +281,12 @@
         Solving Problems
       </p>
 
-      <div class="flex flex-col gap-10 mt-10">
+      <div class="flex flex-col gap-16 mt-16">
         <div class="flex justify-center flex-wrap gap-4">
           <img
             src="assets/images/event-1.svg"
             alt=""
-            class="h-auto md:h-[20rem] w-full md:w-fit"
+            class="h-auto md:h-[15rem] w-full md:w-fit"
           />
           <div class="p-2 text-left">
             <p class="mb-4 font-semibold text-[#283c90]">June 23, 2021</p>
@@ -305,7 +309,7 @@
           <img
             src="assets/images/event-2.svg"
             alt=""
-            class="h-auto md:h-[20rem] w-full md:w-fit"
+            class="h-auto md:h-[15rem] w-full md:w-fit"
           />
           <div class="p-2 text-left">
             <p class="mb-4 font-semibold text-[#283c90]">June 23, 2021</p>
@@ -524,22 +528,24 @@
       </div>
     </section>
 
-    <section
-      class="h-auto max-w-screen-lg m-4 md:m-auto py-10 px-4 md:px-10 border-4 border-[#283c90] mb-10 text-center"
-    >
-      <p class="mb-10 font-medium">
-        Our solutions drive growth through cost efficiency, security
-        enhancement, and procedural innovation. Let our expertise boost your
-        digital transformation efforts.
-      </p>
-      <a
-        href="#"
-        class="text-[#283c90] font-medium px-6 py-2 border-2 border-[#283c90]"
-        >Share Your Needs</a
+    <section class="mt-20 w-full h-auto">
+      <div
+        class="h-auto max-w-screen-lg md:m-auto py-10 px-4 md:px-10 border-4 border-[#283c90] mb-10 text-center"
       >
+        <p class="mb-10 font-medium">
+          Our solutions drive growth through cost efficiency, security
+          enhancement, and procedural innovation. Let our expertise boost your
+          digital transformation efforts.
+        </p>
+        <a
+          href="#"
+          class="text-[#283c90] font-medium px-6 py-2 border-2 border-[#283c90]"
+          >Share Your Needs</a
+        >
+      </div>
     </section>
 
-    <section class="h-auto w-screen py-14 bg-[#283c90] px-4 mt-4">
+    <section class="h-auto w-full py-14 bg-[#283c90] px-4 mt-4">
       <div
         class="max-w-screen-lg m-auto flex items-center justify-center gap-6 md:justify-between flex-wrap"
       >
@@ -557,7 +563,7 @@
     <footer class="h-auto footer py-6 px-4 pb-10">
       <a href="/" class="w-fit block m-auto">
         <img
-          src="assets/images/logo.svg"
+          src="/assets/images/logo.svg"
           decoding="async"
           loading="lazy"
           height="50"
