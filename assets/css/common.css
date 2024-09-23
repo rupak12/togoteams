@@ -44,3 +44,7 @@
 .payrollHero {
   background: linear-gradient(281.91deg, #365dff, #0c122a);
 }
+.helpHero {
+  background: linear-gradient(281.91deg, #4ECAFF, #3037EB);
+  border-radius: 0px 0px 60px 0px;
+}

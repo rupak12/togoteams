@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <title>Help Desk</title>
+  </head>
+  <body>
+    <section class="h-auto w-full bg-white lg:py-2 relative helpHero ">
+      <header class="relative z-10">
+        <nav
+          class="bg-white shadow-md max-w-screen-xl m-auto rounded-2xl sm:px-4 md:px-10"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+              <div class="flex justify-between items-center w-full">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                  <a href="/" class="text-2xl font-bold">
+                    <img
+                      src="assets/images/logo.svg"
+                      decoding="async"
+                      loading="lazy"
+                      height="50"
+                      width="200"
+                      class="h-auto w-[10rem]"
+                    />
+                  </a>
+                </div>
+
+                <!-- Primary Nav Items (Hidden on Mobile) -->
+                <div class="hidden md:-my-px sm:ml-6 md:flex sm:space-x-8 z-40">
+                  <a
+                    href="#"
+                    class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                    >Home</a
+                  >
+                  <a
+                    href="services.html"
+                    class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+                    ><div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+                    Services</a
+                  >
+                  <a
+                    href="about.html"
+                    class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    About</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                    >Blog</a
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-[#283c90] text-white py-3 px-6 rounded-xl hidden md:inline-block"
+                >
+                  Connect Now</a
+                >
+              </div>
+
+              <!-- Hamburger Menu for Mobile -->
+              <div class="-mr-2 flex items-center md:hidden">
+                <button
+                  id="mobile-menu-button"
+                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden sm:hidden py-4">
+            <div class="pt-2 pb-3 space-y-1">
+              <a
+                href="#"
+                class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-[#283c90] px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+              >
+                <div class="h-2 w-2 bg-[#283c90] rounded-full"></div>
+                Services</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+              >
+                About</a
+              >
+
+              <a
+                href="#"
+                class="text-gray-900 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+                >Contact</a
+              >
+            </div>
+            <a
+              href="#"
+              class="bg-[#283c90] text-white py-3 px-6 rounded-xl block w-fit mt-6 m-auto"
+            >
+              Connect Now</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <div
+        class="max-w-screen-xl m-auto flex items-center justify-center gap-20 px-4 py-14"
+      >
+        <div class="w-full h-full lg:w-2/4 flex flex-col relative">
+          <img
+            src="assets/images/Helpdesk (OSS).svg"
+            alt="payroll heading"
+            height="100"
+            width="100"
+            class="h-6 sm:h-10 w-fit mb-6"
+          />
+
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit accusamus quisquam accusantium deleniti quibusdam
+            repellendus libero ea ipsum distinctio eveniet sequi officia nam
+            repellat magni sed maiores
+          </p>
+        </div>
+        <div class="hidden lg:block w-2/4 h-full flex justify-end items-center">
+          <img
+            src="assets/images/OBJECTS.svg"
+            alt=""
+            class="h-[30rem] w-fit"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="h-auto max-w-screen-xl m-auto py-10 relative px-4">
+      <h2 class="text-center text-[#283c90] text-3xl sm:text-4xl font-semibold">
+        Features of Helpdesk (OSS)
+      </h2>
+      <div
+        class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8"
+      >
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Automated Payroll Calculation
+            </p>
+            <p class="text-sm text-dark">
+              Calculated earnings and deductions automatically.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">Tax Managment</p>
+            <p class="text-sm text-dark">
+              Manage tax calculations and fillings
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90]  rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">Direct Deposit</p>
+            <p class="text-sm text-dark">
+              Enables electronics paycheck deposits.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Employee Self-Service
+            </p>
+            <p class="text-sm text-dark">
+              Provides online access to pay stubs and tax documents.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Time and Attendance Tracking
+            </p>
+            <p class="text-sm text-dark">
+              Manage tax calculations and fillings
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Benefits Administration
+            </p>
+            <p class="text-sm text-dark">Manage employee benefits.</p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold whitespace-nowrap text-dark mb-1">
+              Compliance Managment
+            </p>
+            <p class="text-sm text-dark">
+              Ensure legal and regulatory compliance.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Report and Analytic
+            </p>
+            <p class="text-sm text-dark">Offered detailed payroll reports.</p>
+          </div>
+        </div>
+        <div class="bg-[#ffffff] p-4 pb-7 border-4 border-[#283C90] rounded-xl flex gap-4 flex-nowrap">
+          <img
+            src="assets/images/sales.svg"
+            alt="sales icon"
+            height="10"
+            width="10"
+            class="h-10 w-10"
+          />
+          <div>
+            <p class="text-xl font-semibold text-dark mb-1">
+              Customizable Pay<br> Schedules
+            </p>
+            <p class="text-sm text-dark">Support various pay frequencies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="h-auto grid grid-cols-1 md:grid-cols-2 gap-10 max-w-screen-xl m-auto py-10 relative px-4"
+    >
+      <div class="flex flex-col justify-center">
+        <h2
+          class="text-[#283c90] text-3xl sm:text-4xl font-semibold text-center sm:text-left"
+        >
+          Impact on Your Business
+        </h2>
+        <ul class="mt-4 flex flex-col gap-4 text-[#222] list-disc list-inside">
+          <li class="text-[#222] font-medium text-md">
+            <strong>Efficiency:</strong> Streamlines payroll processes.
+          </li>
+          <li class="text-[#222] font-medium text-md">
+            <strong>Accuracy:</strong> Reduces errors in payroll and tax filings.
+          </li>
+          <li class="text-[#222] font-medium text-md">
+            <strong>Cost Savings:</strong> Decreases administrative costs and compliance errors.
+          </li>
+          <li class="text-[#222] font-medium text-md">
+            <strong>Employee Satisfaction:</strong> Ensures accurate and timely payments.
+          </li>
+          <li class="text-[#222] font-medium text-md">
+            <strong>Data Security:</strong>  Safeguards employee information.
+          </li>
+          <li class="text-[#222] font-medium text-md">
+            <strong>Scalability:</strong> Adapts to business growth.
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <img
+          src="assets/images/Group 57.svg"
+          alt="business Impace "
+          height="100"
+          width="100"
+          class="h-auto w-full"
+        />
+      </div>
+    </section>
+    <section class="h-auto max-w-screen-xl m-auto py-10 relative px-4">
+      <h2 class="text-center text-[#283c90] text-3xl sm:text-4xl font-semibold">
+        Why Choose Us?
+      </h2>
+
+      <div
+        class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8"
+      >
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/comprehensive.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">Comprehensive Solutions</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/userFriendly.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">User-Friendly Interface</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/competative.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">Competative Pricing</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/customerSupport.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">Reliable Support</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/integrationCapabilities.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">Integration Capabilities</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/secureCompliant.svg"
+            alt="comprehensive"
+            height="100"
+            width="100"
+            class="h-14 w-14"
+          />
+          <p class="mt-3 text-xl font-medium">Secure and Compliant</p>
+          <p class="text-sm text-gray-500 sm:mt-2">
+            All-in-one system covering all sales aspects
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="h-auto max-w-screen-xl m-auto py-10 relative px-4">
+      <h2 class="text-center text-[#283c90] text-3xl sm:text-4xl font-semibold">
+        Pricing
+      </h2>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="border border-[#5B7AFF] p-5 rounded-xl border-t-4 flex flex-col justify-between"
+        >
+          <div class="">
+            <h2 class="text-xl text-center font-semibold text-[#222] mb-6">
+              Starter Pack
+            </h2>
+            <img
+              src="assets/images/starter.svg"
+              alt="starter"
+              height="200"
+              width="200"
+              class="h-40 w-full"
+            />
+            <p class="my-8 text-center text-sm font-medium">
+              After of basic for businesses that are just getting started.
+            </p>
+
+            <p class="text-center flex justify-center items-center gap-2">
+              <span class="text-4xl font-semibold text-[#5B7AFF]">$12</span
+              ><span class="text-sm">/month</span>
+            </p>
+            <hr class="my-6" />
+
+            <ul class="px-4 flex flex-col gap-6">
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                      "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                        "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Basic Dashboard
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                        "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                All components included
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href=""
+            class="block mt-10 py-4 text-center bg-[#5B7AFF] text-white font-medium rounded-md"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="border border-[rgba(0,0,0,0.2)] p-5 rounded-xl border-t-4 border-t-[#ec539c] flex flex-col justify-between"
+        >
+          <div>
+            <h2 class="text-xl text-center font-semibold text-[#222] mb-6">
+              Standard Pack
+            </h2>
+            <img
+              src="assets/images/standard.svg"
+              alt="starter"
+              height="200"
+              width="200"
+              class="h-40 w-full"
+            />
+            <p class="my-8 text-center text-sm font-medium">
+              After of basic for businesses that are just getting started.
+            </p>
+
+            <p class="text-center flex justify-center items-center gap-2">
+              <span class="text-4xl font-semibold text-[#ec539c]">$84</span
+              ><span class="text-sm">/month</span>
+            </p>
+            <hr class="my-6" />
+
+            <ul class="px-4 flex flex-col gap-6">
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                    "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                      "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Basic Dashboard
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                      "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                All components included
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                      "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                      "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href=""
+            class="block mt-10 py-4 text-center border border-[#5B7AFF] text-[#5B7AFF] font-medium rounded-md"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="border border-[rgba(0,0,0,0.2)] p-5 rounded-xl border-t-4 border-t-[#5bc587] flex flex-col justify-between"
+        >
+          <div>
+            <h2 class="text-xl text-center font-semibold text-[#222] mb-6">
+              Enterprise Pack
+            </h2>
+            <img
+              src="assets/images/enterprise.svg"
+              alt="starter"
+              height="200"
+              width="200"
+              class="h-40 w-full"
+            />
+            <p class="my-8 text-center text-sm font-medium">
+              After of basic for businesses that are just getting started.
+            </p>
+
+            <p class="text-center flex justify-center items-center gap-2">
+              <span class="text-4xl font-semibold text-[#5bc587]">$316</span
+              ><span class="text-sm">/month</span>
+            </p>
+            <hr class="my-6" />
+
+            <ul class="px-4 flex flex-col gap-6">
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                  "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                    "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Basic Dashboard
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                    "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                All components included
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                    "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="assets/images/checkIcon.svg
+                    "
+                  alt="checkIcon"
+                  class="h-6 w-6"
+                  width="10"
+                  height="10"
+                />
+                Single Project use
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href=""
+            class="block mt-10 py-4 text-center border border-[#5B7AFF] text-[#5B7AFF] font-medium rounded-md"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="h-auto max-w-screen-xl m-auto py-10 relative px-4">
+      <h2 class="text-center text-[#283c90] text-3xl sm:text-4xl font-semibold">
+        Blogs
+      </h2>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="">
+          <div>
+            <img
+              src="assets/images/blogTemplate1.svg"
+              alt="blog image"
+              height="100"
+              width="100"
+              decoding="async"
+              loading="lazy"
+              class="h-auto w-full"
+            />
+          </div>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-[#6941c6]">
+              Alec Whitten &bullet; 1 Jan 2023
+            </p>
+            <h2
+              class="flex items-center justify-between mt-2 text-lg font-semibold"
+            >
+              Bill Walsh leadership lessons
+              <img
+                src="assets/images/samllNorthEastArrow.svg"
+                alt="samllNorthEastArrow"
+                height="10"
+                width="10"
+                class="h-7 w-7"
+              />
+            </h2>
+            <p class="my-2 text-sm text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, est?
+            </p>
+            <div class="flex items-center gap-4 flex-wrap">
+              <span
+                class="bg-[#f9f5ff] text-[#6941c6] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Leadership</span
+              >
+              <span
+                class="bg-[#f8f9fc] text-[#363f72] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Managment</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div>
+            <img
+              src="assets/images/blogTemplate2.svg"
+              alt="blog image"
+              height="100"
+              width="100"
+              decoding="async"
+              loading="lazy"
+              class="h-auto w-full"
+            />
+          </div>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-[#6941c6]">
+              Alec Whitten &bullet; 1 Jan 2023
+            </p>
+            <h2
+              class="flex items-center justify-between mt-2 text-lg font-semibold"
+            >
+              PM mental models
+              <img
+                src="assets/images/samllNorthEastArrow.svg"
+                alt="samllNorthEastArrow"
+                height="10"
+                width="10"
+                class="h-7 w-7"
+              />
+            </h2>
+            <p class="my-2 text-sm text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, est?
+            </p>
+            <div class="flex items-center gap-4 flex-wrap">
+              <span
+                class="bg-[#f0f9ff] text-[#026aa2] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Product</span
+              >
+              <span
+                class="bg-[#f9f5ff] text-[#6941c6] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Research</span
+              >
+
+              <span
+                class="bg-[#fff6ed] text-[#c4320a] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Frameworks</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div>
+            <img
+              src="assets/images/blogTemplate3.svg"
+              alt="blog image"
+              height="100"
+              width="100"
+              decoding="async"
+              loading="lazy"
+              class="h-auto w-full"
+            />
+          </div>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-[#6941c6]">
+              Alec Whitten &bullet; 1 Jan 2023
+            </p>
+            <h2
+              class="flex items-center justify-between mt-2 text-lg font-semibold"
+            >
+              What is Wireframing?
+              <img
+                src="assets/images/samllNorthEastArrow.svg"
+                alt="samllNorthEastArrow"
+                height="10"
+                width="10"
+                class="h-7 w-7"
+              />
+            </h2>
+            <p class="my-2 text-sm text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, est?
+            </p>
+            <div class="flex items-center gap-4 flex-wrap">
+              <span
+                class="bg-[#f9f5ff] text-[#6941c6] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Design</span
+              >
+              <span
+                class="bg-[#eef4ff] text-[#4c50d3] text-sm font-medium py-1 px-3 rounded-3xl"
+                >Research</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-auto max-w-screen-lg m-auto sm:py-4 relative px-4 flex flex-col gap-6"
+    >
+      <div class="w-full md:p-8">
+        <div
+          id="faq-1"
+          class="faq-container bg-white p-2 py-4 md:p-6 rounded-md transition-colors duration-300"
+        >
+          <div
+            class="flex justify-between items-center cursor-pointer"
+            onclick="toggleFaq(1)"
+          >
+            <div class="flex items-center gap-2 md:gap-10">
+              <p class="text-3xl font-semibold text-[#9d96a8] hidden md:block">
+                01
+              </p>
+              <h3 class="text-lg font-semibold">
+                Alright, but what exactly do you do?
+              </h3>
+            </div>
+            <div
+              class="icon transition-transform transform rotate-0 bg-[#283c90] p-2 rounded-full"
+              id="icon-1"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-content hidden mt-2 text-gray-600" id="content-1">
+            <p class="text-[#283c90] text-md">
+              As a creative agency, we work with you to develop solutions to
+              address your brand needs. That includes various aspects of brand
+              planning and strategy, marketing, and design.
+            </p>
+          </div>
+        </div>
+        <div
+          id="faq-2"
+          class="faq-container bg-white p-2 py-4 md:p-6 rounded-md transition-colors duration-300"
+        >
+          <div
+            class="flex justify-between items-center cursor-pointer"
+            onclick="toggleFaq(2)"
+          >
+            <div class="flex items-center gap-2 md:gap-10">
+              <p class="text-3xl font-semibold text-[#9d96a8] hidden md:block">
+                02
+              </p>
+              <h3 class="text-lg font-semibold">
+                Alright, but what exactly do you do?
+              </h3>
+            </div>
+            <div
+              class="icon transition-transform transform rotate-0 bg-[#283c90] p-2 rounded-full"
+              id="icon-2"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-content hidden mt-2 text-gray-600" id="content-2">
+            <p class="text-[#283c90] text-md">
+              As a creative agency, we work with you to develop solutions to
+              address your brand needs. That includes various aspects of brand
+              planning and strategy, marketing, and design.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="mt-20 w-full h-auto px-4">
+      <div
+        class="h-auto max-w-screen-xl md:m-auto py-10 px-4 md:px-10 border-4 border-[#283c90] mb-10 text-center"
+      >
+        <p class="mb-10 font-medium">
+          Our solutions drive growth through cost efficiency, security
+          enhancement, and procedural innovation. Let our expertise boost your
+          digital transformation efforts.
+        </p>
+        <a
+          href="#"
+          class="text-[#283c90] font-medium px-6 py-2 border-2 border-[#283c90]"
+          >Share Your Needs</a
+        >
+      </div>
+    </section>
+
+    <section class="h-auto w-full py-14 bg-[#283c90] px-4 mt-4">
+      <div
+        class="max-w-screen-lg m-auto flex items-center justify-center gap-6 md:justify-between flex-wrap"
+      >
+        <img
+          src="assets/images/connectText.svg"
+          alt=""
+          class="h-auto w-[15rem] md:w-[25rem]"
+        />
+        <a href="#" class="text-white border-2 border-white px-6 py-2"
+          >Connect now</a
+        >
+      </div>
+    </section>
+
+    <footer class="h-auto footer py-6 px-4 pb-10">
+      <a href="/" class="w-fit block m-auto">
+        <img
+          src="assets/images/logo.svg"
+          decoding="async"
+          loading="lazy"
+          height="50"
+          width="200"
+          class="h-auto w-[10rem]"
+        />
+      </a>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 gap-y-10 lg:gap-y-0 max-w-screen-xl mt-10 m-auto"
+      >
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Product</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Landing Page</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Popup Builder</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Web design</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Content</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Integrations</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Use Cases</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Web-designers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Marketers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Small Business</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Website Builder</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Resources</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">Academy </a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Blog</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Themes</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Hosting</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Developers</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Company</h2>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <a href="#" class="text-sm text-[#5d5d5d]">About Us</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Careers</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">FAQs</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Teams</a>
+            <a href="#" class="text-sm text-[#5d5d5d]">Contact Us</a>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="text-lg text-[#5d5d5d] font-semibold">Contact Us</h2>
+          <div class="flex flex-col gap-4 mt-4">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/location.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+              <div>
+                <p class="text-sm font-medium">Wisconsin Ave, Suite 700</p>
+                <p class="text-sm font-medium">Chevy Chase, Maryland 20815</p>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <img
+                src="assets/images/email.svg"
+                class=""
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+
+              <p class="text-sm font-medium">support@figma.com</p>
+            </div>
+            <img
+              src="assets/images/map.svg"
+              height="100"
+              width="100"
+              alt="map image"
+              class="height-80 w-full"
+            />
+            <div class="flex items-center gap-5 mt-4">
+              <a href="#"
+                ><img
+                  src="assets/images/facebook.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/twitter.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/telegram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/instagram.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/linkedin.svg"
+                  alt="social"
+                  height="20"
+                  width="20"
+                  class="h-5 w-5"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-screen-xl mt-10 m-auto flex items-center justify-between flex-wrap gap-10"
+      >
+        <p class="text-sm text-[#5d5d5d]">&copy;2024 All Rights Reserved</p>
+        <div class="flex items-center gap-x-6 gap-y-3 flex-wrap">
+          <a href="#" class="text-sm text-[#5d5d5d]">Privacy Policy</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Terms of Use</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Sales and Refunds</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Legal</a>
+          <a href="#" class="text-sm text-[#5d5d5d]">Site Map</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
