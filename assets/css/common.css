@@ -45,6 +45,8 @@
   background: linear-gradient(281.91deg, #365dff, #0c122a);
 }
 .helpHero {
-  background: linear-gradient(281.91deg, #4ECAFF, #3037EB);
-  border-radius: 0px 0px 60px 0px;
+  background: linear-gradient(281.91deg, #D7ECFF, #ffffff 55%, #D7ECFF);
+  /* background: linear-gradient(281.91deg, #b9dcfa 0%, #ffffff 70%, #ffffff 70%, #D7ECFF 0%); */
+
+  /* border-radius: 0px 0px 60px 0px; */
 }
